@@ -261,6 +261,7 @@ body.sr .reveal.d1{transition-delay:.08s}body.sr .reveal.d2{transition-delay:.18
 .tag-row{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 0}
 .tag-row span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:6px 13px}
 
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:42px}.foot-base{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid var(--line2);margin-top:46px;padding:22px 0;color:var(--muted2);font-size:12.5px}
 @media(max-width:1024px){
   .promise{grid-template-columns:repeat(2,1fr)}
   .dept-grid,.shop-grid{grid-template-columns:repeat(2,1fr)}
@@ -269,6 +270,7 @@ body.sr .reveal.d1{transition-delay:.08s}body.sr .reveal.d2{transition-delay:.18
 }
 @media(max-width:760px){
   body{font-size:16px}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:30px}
   .nav,.status{display:none}.call-btn span{display:none}.call-btn{padding:9px}
   .burger{display:flex}.mobile-nav:not([hidden]){display:flex}
   .head-in{height:64px}
