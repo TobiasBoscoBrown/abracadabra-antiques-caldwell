@@ -130,8 +130,8 @@
 
   // drawer
   var drawer=$("#drawer"), back=$("#drawerBack");
-  function openDrawer(){ if(drawer){drawer.classList.add("on");} if(back){back.classList.add("on");} renderDrawer(); }
-  function closeDrawer(){ if(drawer){drawer.classList.remove("on");} if(back){back.classList.remove("on");} }
+  function openDrawer(){ if(drawer){drawer.classList.add("on"); drawer.style.setProperty("transform","translateX(0)","important");} if(back){back.classList.add("on");} renderDrawer(); }
+  function closeDrawer(){ if(drawer){drawer.classList.remove("on"); drawer.style.setProperty("transform","translateX(101%)","important");} if(back){back.classList.remove("on");} }
   $$("[data-open-cart]").forEach(function(b){b.addEventListener("click",function(e){e.preventDefault();openDrawer();});});
   if($("#drawerClose")) $("#drawerClose").addEventListener("click",closeDrawer);
   if(back) back.addEventListener("click",closeDrawer);
